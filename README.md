@@ -1,4 +1,4 @@
 versionify
 ==========
 
-A simple python script to backup anc create versions of files.
+A simple python script to backup and create versions of files.

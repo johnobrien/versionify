@@ -8,7 +8,7 @@ from shutil import copy
 
 current_path, original_file_name  = os.path.split(sys.argv[1])
 
-print("Curren Path: {0}".format(sys.argv[1]))
+print("Current Path: {0}".format(sys.argv[1]))
 
 directory = os.path.join(current_path,  "Old Versions")
 
