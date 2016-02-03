@@ -7,10 +7,15 @@ from datetime import datetime
 from shutil import copy
 
 
-def versionify(argv):
-    current_path, original_file_name = os.path.split(argv[1])
+def handler(argv):
+    versionify(argv)
 
-    print("Current Path: {0}".format(sys.argv[1]))
+
+def versionify(fp):
+    print(fp)
+    current_path, original_file_name = os.path.split(fp)
+
+    print("Current Path: {0}".format(sys.argv[0]))
     try:
         directory = os.path.join(current_path,  "Old Versions")
 
@@ -33,9 +38,9 @@ def versionify(argv):
         print("{0} versioned successfully as {1}".format(original_file_name,
                                                          versioned_file_name))
     except Exception:
-        raise
-    finally:
         input("Press any key to continue...")
+        raise
+
 
 if __name__ == "__main__":
-    versionify(sys.argv)
+    handler(sys.argv)
