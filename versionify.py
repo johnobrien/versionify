@@ -8,17 +8,17 @@ from shutil import copy
 
 
 def handler(argv):
-    versionify(argv)
+    versionify(argv[1])
 
 
 def versionify(fp):
     print(fp)
     current_path, original_file_name = os.path.split(fp)
 
-    print("Current Path: {0}".format(sys.argv[0]))
+    print("Current Path: {0}".format(fp))
     try:
         directory = os.path.join(current_path,  "Old Versions")
-
+        print("Directory: {0}".format(directory))
         if not os.path.exists(directory):
             os.makedirs(directory)
 
@@ -30,15 +30,15 @@ def versionify(fp):
             + getpass.getuser() + "-"\
             + dt.strftime("%Y.%m.%d.%H.%M.%S") + fileExtension
 
-        copy(original_file_name, directory)
-
+        print("Original_File_name:{0}".format(original_file_name))
+        copy(fp, directory)
         os.rename(os.path.join(directory, original_file_name),
                   os.path.join(directory, versioned_file_name))
 
         print("{0} versioned successfully as {1}".format(original_file_name,
                                                          versioned_file_name))
     except Exception:
-        input("Press any key to continue...")
+        raw_input("Press any key to continue...")
         raise
 
 

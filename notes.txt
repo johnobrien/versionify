@@ -1,0 +1,25 @@
+Next steps?
+
+Maybe make an .exe and make sure that works?
+
+3/9/16
+
+Problem: py2exe doesn't support python 3.5, and doesn't look like it will anyone soon.
+
+I could install python 2.7.11, and try that?
+
+I'll have to blow away my current versionify virtualenv, and then recreate it using python 2.7.11, and
+then re pip install py2exe, but that shouldn't be so bad..
+
+LATER THAT DAY:
+
+Okay, so that worked; the exe file when a file is drag-and-dropped onto it creates a backup as it should.
+
+But a shortcut to the exe doesn't work. Now getting SyntaxError: unexpected EOF while parsing for file "<string>", line 0...
+
+It works!
+
+I done figured it out!
+
+Now I have to figure out how to write an installer....
+
