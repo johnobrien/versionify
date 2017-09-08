@@ -1,0 +1,3 @@
+1. Install python 3.5.3
+2. Pip install -r requirements.txt
+3. Run "pyinstaller versionify.py"
