@@ -1,3 +1,3 @@
-1. Install python 3.5.3
+1. Install python 3.5.3 (pyinstaller doesn't support 3.6)
 2. Pip install -r requirements.txt
-3. Run "pyinstaller versionify.py"
+3. Outside of Pycharm, install the program "Advanced Installer".

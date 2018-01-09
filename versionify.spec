@@ -4,9 +4,9 @@ block_cipher = None
 
 
 a = Analysis(['versionify.py'],
-             pathex=['C:\\Users\\John.OBrien\\workspace\\versionify'],
-             binaries=None,
-             datas=None,
+             pathex=['C:\\Users\\John.OBrien\\PycharmProjects\\versionify'],
+             binaries=[],
+             datas=[],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
