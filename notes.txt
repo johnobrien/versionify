@@ -23,3 +23,9 @@ I done figured it out!
 
 Now I have to figure out how to write an installer....
 
+1/8/18
+
+Drag and drop works for the versionify.exe application in the dist/versionify directory, but not via SendTo. I suspect
+why is because the EXE doesn't have everything inside it and needs the surrounding files... So maybe try
+cx_freeze or an option in Pyinstaller that would put in all into one application?
+
