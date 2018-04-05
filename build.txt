@@ -1,7 +1,5 @@
 1. Run through the "install.txt" instructions to make sure everything is setup.
 2. Click on the Terminal in the bottom of the Pycharm IDE to open the versionify virtualenv.
-3. From the terminal, run "pyinstaller versionify.py". This will build the versionify.exe in the ~/dist directory.
-4. Open the versionify.aip file in "Advanced Installer"
-5. From within Advanced Installer, click "Build"
-6. From within Advanced Installer, click "Open Output Folder"
-7. The "versionify.msi" installer is now in the versionify-SetupFiles directory!
+3. From the terminal, run "python setup.py bdist_msi --initial-target-dir=%HOMEDRIVE%\%HOMEPATH%\\AppData\Roaming\Microsoft\Windows\SendTo".
+This will build the MSI installer in the dist directory.
+4. Run the MSI installer to install Versionify.

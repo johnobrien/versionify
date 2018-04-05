@@ -29,3 +29,12 @@ Drag and drop works for the versionify.exe application in the dist/versionify di
 why is because the EXE doesn't have everything inside it and needs the surrounding files... So maybe try
 cx_freeze or an option in Pyinstaller that would put in all into one application?
 
+4/5/18
+
+So, I got this working (yeah!)
+
+Only nit picky thing is cx_freeze doesn't support putting everything into one .exe file,
+(see http://cx-freeze.readthedocs.io/en/latest/faq.html#single-file-executables) so there
+is an annoying "lib" directory alongside the versionify.exe application in sendto.
+
+But it works so I'm gonna call that success.
