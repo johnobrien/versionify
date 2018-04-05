@@ -9,7 +9,7 @@ Known issues:
 
 How to Install
 
-1. Run [/blob/master/dist/](versionify-0.1-amd64.msi)
+1. Run [versionify-0.1-amd64.msi](/tree/master/dist)
 
 How to Use
 
