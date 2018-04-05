@@ -9,7 +9,8 @@ Known issues:
 
 How to Install
 
-1. Run [versionify-0.1-amd64.msi](/dist)
+1. Download [versionify-0.1-amd64.msi](/dist)
+2. Run it to install versionify.exe to your SendTo directory.
 
 How to Use
 
