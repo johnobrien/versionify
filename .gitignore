@@ -2,3 +2,6 @@ __pycache__/
 .project
 .pyc
 .pydevproject
+/venv/
+/build/
+.idea/*
